@@ -1,0 +1,29 @@
+{
+    "properties": {
+        "roleName": "Virtual Machine JIT User Access",
+        "description": "Role for the user who can request JIT VM Access and can access VM through Azure Bastion",
+        "assignableScopes": [
+            "/subscriptions/11111111-1111-1111-1111-111111111111"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Compute/virtualMachines/read",
+                    "Microsoft.Network/networkInterfaces/*/read",
+                    "Microsoft.Network/bastionHosts/read",
+                    "Microsoft.Network/virtualNetworks/read",
+                    "Microsoft.Network/virtualNetworks/virtualMachines/read",
+                    "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
+                    "Microsoft.Network/virtualNetworks/bastionHosts/default/action",
+                    "Microsoft.Security/policies/read",
+                    "Microsoft.Security/pricings/read",
+                    "Microsoft.Security/locations/jitNetworkAccessPolicies/initiate/action",
+                    "Microsoft.Security/locations/jitNetworkAccessPolicies/*/read"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
