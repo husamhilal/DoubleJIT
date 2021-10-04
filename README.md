@@ -2,7 +2,12 @@
 Zero Trust Access to Azure VM through double Just in Time Access, at identity authorization level and network access level.
 
 ## Architecture
+
+![Architecture Components](./Media/DoubleJITArchComp.png)
+
 ![Architecture Diagram](./Media/DoubleJITArchDiag.png)
+
+![JIT](./Media/DoubleJITorJIT2.png)
 
 ## Environment
 Steps to create the initial environment
